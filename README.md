@@ -7,7 +7,7 @@ Before running the script, make sure you have persisted authentication on local 
 Create a file named `token.json` with the structure
 ```javascript
 {
-    "token" : "YOUR_GITLAB_TOKEN",
+    "token" : "<gitlab-token>",
     "url" : "<custom-gitlab-domain>",
     "use_ssh": <boolean>
 }
