@@ -23,8 +23,4 @@ npm start
 ```
 
 #### Future Scope
-* - [ ] If the repository already exists, `git pull` instead of cloning
-* - [ ] Gui for entering token
-
-
-### Thats It :rocket:, Now go backup
+    Not planned. Please follow original project for it.
