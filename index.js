@@ -7,6 +7,7 @@ let config = require('./config')
 const gitlabUrl = config.url;
 const token = config.token;
 const useSSH = config.use_ssh;
+const apiVersion = config.api_version;
 
 let Promise = require('bluebird')
 let cmd = require('node-cmd')
