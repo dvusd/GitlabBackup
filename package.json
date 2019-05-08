@@ -1,6 +1,6 @@
 {
-  "name": "gitlab_backup_util",
-  "version": "1.0.0",
+  "name": "gitlab_backup",
+  "version": "1.0.3",
   "description": "A small utility to backup or clone all projects you have on gitlab.",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/itsTeknas/GitlabBackupUtil.git"
+    "url": "https://github.com/zombeerose/GitlabBackup"
   },
-  "author": "Sanket Berde",
+  "author": "zombeerose",
   "license": "Apache-2.0",
   "dependencies": {
     "bluebird": "^3.5.1",
