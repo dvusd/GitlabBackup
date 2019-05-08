@@ -13,7 +13,7 @@ let Promise = require('bluebird')
 let cmd = require('node-cmd')
 
 
-rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups`, {
+rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups?order_by=name&sort=asc&per_page=100`, {
     json: true,
     qs: {
         simple: true,
