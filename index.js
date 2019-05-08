@@ -2,17 +2,17 @@
 
 let rp = require('request-promise');
 let _ = require('lodash');
-let tokenJson = require('./token')
+let config = require('./config')
 
-const gitlabUrl = tokenJson.url;
-const token = tokenJson.token;
-const useSSH = tokenJson.use_ssh;
+const gitlabUrl = config.url;
+const token = config.token;
+const useSSH = config.use_ssh;
 
 let Promise = require('bluebird')
 let cmd = require('node-cmd')
 
 
-rp.get(`https://${gitlabUrl}/api/v4/groups`, {
+rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups`, {
     json: true,
     qs: {
         simple: true,
@@ -26,7 +26,7 @@ rp.get(`https://${gitlabUrl}/api/v4/groups`, {
     let promises = [];
     for (let gid of gids) {
         promises.push(
-            rp.get(`https://${gitlabUrl}/api/v4/groups/${gid}/projects`, {
+            rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups/${gid}/projects`, {
                 json: true,
                 qs: {
                     simple: true,
