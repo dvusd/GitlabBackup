@@ -48,14 +48,14 @@ rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups`, {
             })
         )
     }
-    https: //www.gitlab.com/
-        Promise.all(promises).then(() => {
-            console.log(pgits);
-            for (let git of pgits) {
-                let prefixlen = (4 + gitlabUrl.length + 1);
-                let projname = git.substring(prefixlen, git.length - 4);
-                console.log(`cloning ${projname}`);
-                cmd.run(`git clone ${git} backup/${projname}`);
-            }
-        });
+    
+    Promise.all(promises).then(() => {
+        console.log(pgits);
+        for (let git of pgits) {
+            let prefixlen = (4 + gitlabUrl.length + 1);
+            let projname = git.substring(prefixlen, git.length - 4);
+            console.log(`cloning ${projname}`);
+            cmd.run(`git clone ${git} backup/${projname}`);
+        }
+    });
 })
