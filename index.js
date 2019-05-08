@@ -27,7 +27,7 @@ rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups`, {
     let promises = [];
     for (let gid of gids) {
         promises.push(
-            rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups/${gid}/projects`, {
+            rp.get(`https://${gitlabUrl}/api/${apiVersion}/groups/${gid}/projects?order_by=name&sort=asc&per_page=100`, {
                 json: true,
                 qs: {
                     simple: true,
