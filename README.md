@@ -4,7 +4,7 @@ A Small utility to backup all of your gitlab repositories to local filesystem.
 
 Before running the script, make sure you have persisted authentication on local cli with gitlab.
 
-Create a file named `token.json` with the structure
+Create a file named `config.json` with the structure
 ```javascript
 {
     "token" : "<gitlab-token>",
