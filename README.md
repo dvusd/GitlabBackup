@@ -1,4 +1,4 @@
-# GitlabBackupUtil
+# GitlabBackup
 
 A Small utility to backup all of your gitlab repositories to local filesystem.
 
