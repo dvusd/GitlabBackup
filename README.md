@@ -1,6 +1,6 @@
 # GitlabBackup
 
-A Small utility to backup all of your gitlab repositories to local filesystem.
+A Small utility to backup all of your active gitlab repositories to the local filesystem.  Please note that archived projects are skipped.
 
 Before running the script, make sure you have persisted authentication on local cli with gitlab.
 
